@@ -1,17 +1,19 @@
-name: Build And Deploy
+name: Build and Deploy
 on:
-  push
+  push:
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.deploy_key }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: dist
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+          BUILD_SCRIPT: npm install && npm run build
