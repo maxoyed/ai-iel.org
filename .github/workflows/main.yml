@@ -5,13 +5,14 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
-
-    - name: buildAndDeploy
-      uses: JamesIves/github-pages-deploy-action@master 
+    - name: npm install, build, and test
+      run: |
+        npm ci
+        npm run build --if-present
+        npm test --verbose
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        ACCESS_TOKEN: ${{ secrets.deploy_key }}
-        BRANCH: gh-pages
-        FOLDER: dist
-        BUILD_SCRIPT: npm install && npm run build # 执行的命令
+        ACTIONS_DEPLOY_KEY: ${{ secrets.deploy_key }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: dist
