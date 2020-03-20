@@ -1,7 +1,7 @@
 {
   "name": "ai-iel.org",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://maxoyed.github.io/ai-iel.org",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
