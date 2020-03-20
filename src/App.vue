@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       options: {
-        licenseKey: "MIT",
+        licenseKey: "GPLv3",
         scrollOverflow: true,
         scrollBar: false,
         menu: "#menu",
