@@ -47,7 +47,7 @@ h3
     h5
       font-size: 1.2em
       line-height: 1.2em
-      color: #333
+      color: #333333
       margin: 0.2em
   p
     text-align: justify

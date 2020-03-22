@@ -1,13 +1,13 @@
 <template>
   <ul id="menu">
-    <li data-menuanchor="page1" class="active">
-      <a href="#page1">联盟概述</a>
+    <li data-menuanchor="Overview" class="active">
+      <a href="#Overview">联盟概述</a>
     </li>
-    <li data-menuanchor="page2"><a href="#page2">背景&机遇</a></li>
-    <li data-menuanchor="page3"><a href="#page3">理念&使命</a></li>
-    <li data-menuanchor="page4"><a href="#page4">活动介绍</a></li>
-    <li data-menuanchor="page5"><a href="#page5">新闻事件</a></li>
-    <li data-menuanchor="page6"><a href="#page6">联盟未来及愿景</a></li>
+    <li data-menuanchor="Background"><a href="#Background">背景&机遇</a></li>
+    <li data-menuanchor="Concept"><a href="#Concept">理念&使命</a></li>
+    <li data-menuanchor="Section4"><a href="#Section4">活动介绍</a></li>
+    <li data-menuanchor="Section5"><a href="#Section5">新闻事件</a></li>
+    <li data-menuanchor="Section6"><a href="#Section6">联盟未来及愿景</a></li>
   </ul>
 </template>
 
