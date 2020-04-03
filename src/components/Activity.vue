@@ -63,7 +63,6 @@ export default {
   },
   methods: {
     changeNav: function(currentIndex) {
-      console.log(currentIndex);
       this.currentIndex = currentIndex;
     }
   }
