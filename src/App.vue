@@ -5,7 +5,7 @@
       <Overview />
       <Background />
       <Concept />
-      <Section4 />
+      <Activity />
       <Section5 />
       <Section6 />
     </full-page>
@@ -17,7 +17,7 @@ import Menu from "./components/Menu";
 import Overview from "./components/Overview";
 import Background from "./components/Background";
 import Concept from "./components/Concept";
-import Section4 from "./components/Section4";
+import Activity from "./components/Activity";
 import Section5 from "./components/Section5";
 import Section6 from "./components/Section6";
 export default {
@@ -27,7 +27,7 @@ export default {
     Overview,
     Background,
     Concept,
-    Section4,
+    Activity,
     Section5,
     Section6
   },
@@ -43,7 +43,7 @@ export default {
           "Overview",
           "Background",
           "Concept",
-          "Section4",
+          "Activity",
           "Section5",
           "Section6"
         ],
@@ -51,7 +51,7 @@ export default {
           "#6240f2",
           "#5280f9",
           "#ffffff",
-          "#2c3e4f",
+          "#1f2631",
           "#ba5be9",
           "#b4b8ab"
         ]
