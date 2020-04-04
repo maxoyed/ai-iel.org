@@ -1,11 +1,7 @@
 <template>
   <div class="section">
-    <div class="logo">
-      <img src="../assets/concept.png" alt="理念&使命" />
-      <div class="header">
-        <h4>理念&使命</h4>
-        <p>Concept & Mission</p>
-      </div>
+    <div class="title">
+      <Title icon="concept" cn="理念&使命" en="Concept & Mission" />
     </div>
     <div class="content-area">
       <div class="content-block">
@@ -34,17 +30,21 @@
 </template>
 
 <script>
+import Title from "./Title";
 export default {
-  name: "Concept"
+  name: "Concept",
+  components: {
+    Title
+  }
 };
 </script>
 
 <style lang="sass" scoped>
-.logo
+.title
   color: #5D657E
-  line-height: 1em
-  h4
-    margin: 1em 0 0 0
+  margin: 5vw
+  display: flex
+  justify-content: space-around
 .content-area
   display: flex
   justify-content: space-between
@@ -61,4 +61,5 @@ export default {
   color: #5D657E
   padding: 2vw 25vw
   line-height: 2em
+  margin-top: 5vw
 </style>

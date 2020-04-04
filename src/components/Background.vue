@@ -35,7 +35,7 @@ export default {
 .content-area
   display: flex
   justify-content: space-between
-  padding: 0 20vw
+  padding: 10vw 20vw 5vw 20vw
   .content-block
     width: 28vw
     padding: 0 2vw 1vw 2vw
@@ -52,7 +52,7 @@ export default {
       color: #333333
       text-align: justify
       line-height: 1.5em
-.content-footer p
+.content-footer
   padding: 0 20vw
   line-height: 2em
 </style>

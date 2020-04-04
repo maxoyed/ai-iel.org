@@ -1,11 +1,7 @@
 <template>
   <div class="section">
     <header>
-      <img src="../assets/news.png" alt="新闻&事件" />
-      <div>
-        <h4>新闻&事件</h4>
-        <p>News & Events</p>
-      </div>
+      <Title icon="news" cn="新闻&事件" en="News & Events" />
     </header>
     <div class="content">
       <div class="news-item" v-for="item in news" :key="item.time">
@@ -20,8 +16,12 @@
 </template>
 
 <script>
+import Title from "./Title";
 export default {
   name: "News",
+  components: {
+    Title
+  },
   data() {
     return {
       news: [
@@ -49,19 +49,8 @@ export default {
   display: flex
   flex-direction: column
 header
-  padding: 8vw 10vw 4vw 10vw
+  padding: 4vw 4vw 2vw 4vw
   background: #4986FA
-  display: flex
-  align-items: center
-  text-align: left
-  img
-      width: 64px
-      height: 100%
-      margin-right: 1em
-  h4
-    margin: 0
-  p
-    margin: 0.5em 0 0 0
 .content
   display: flex
   justify-content: space-around

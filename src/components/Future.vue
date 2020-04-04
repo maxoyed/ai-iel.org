@@ -1,12 +1,6 @@
 <template>
   <div class="section">
-    <header>
-      <img src="../assets/future.png" alt="未来&愿景" />
-      <div>
-        <h4>未来&愿景</h4>
-        <p>Future & Vision</p>
-      </div>
-    </header>
+    <Title icon="future" cn="未来&愿景" en="Future & Vision" />
     <div class="content">
       <p>
         “志之所趋，无远弗届。志之所向，无坚弗入。”“IEL”在脚踏实地完善工作的同时，从未停止对未来探索的脚步和对星辰明月的仰望。
@@ -48,8 +42,12 @@
 </template>
 
 <script>
+import Title from "./Title";
 export default {
-  name: "Future"
+  name: "Future",
+  components: {
+    Title
+  }
 };
 </script>
 
@@ -58,19 +56,6 @@ export default {
   background: -webkit-gradient(linear, top right, bottom left, from(#53CAFD), to(#5187F7))
   background: -webkit-linear-gradient(#53CAFD, #5187F7)
   background: linear-gradient(#53CAFD,#5187F7)
-header
-  display: flex
-  align-items: center
-  text-align: left
-  padding: 0 10vw
-  img
-      width: 64px
-      height: 100%
-      margin-right: 1em
-  h4
-    margin: 0
-  p
-    margin: 0.5em 0 0 0
 .content
   text-align: center
   padding: 5vw 15vw
@@ -94,9 +79,8 @@ footer
       margin-left: 2em
       flex-direction: column
       align-items: center
+      cursor: pointer
       img
         width: 32px
         height: 32px
-.popover
-  width: 10vw
 </style>

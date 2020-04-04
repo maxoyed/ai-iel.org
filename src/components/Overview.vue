@@ -19,7 +19,12 @@
       <p>
         “IEL”为会员提供优质学习资源，企业资源，社会资源等，推动以人工智能为核心的新一代信息技术的应用与发展。联盟作为人工智能爱好者群体中的桥梁纽带，将致力于推动完善人工智能及其相关技术学习领域的规范化，促进高校人工智能领域的协同发展。
       </p>
-      <el-button class="join-us" type="primary" round>JOIN US</el-button>
+      <el-popover placement="top" trigger="click">
+        <img class="popover" src="../assets/qq-qrcode.png" alt="QQ群二维码" />
+        <el-button slot="reference" class="join-us" type="primary" round>
+          JOIN US
+        </el-button>
+      </el-popover>
     </div>
   </div>
 </template>
@@ -31,6 +36,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+a
+  color: #ffffff
 h3
   padding-top: 2em
 .content-block

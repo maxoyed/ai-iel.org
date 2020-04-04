@@ -1,12 +1,6 @@
 <template>
   <div class="section">
-    <header>
-      <img src="../assets/activity.png" alt="活动介绍" />
-      <div>
-        <h4>活动介绍</h4>
-        <p>Activity Description</p>
-      </div>
-    </header>
+    <Title icon="activity" cn="活动介绍" en="Activity Description" />
     <div class="nav">
       <div class="nav-item" @click="changeNav(1)">
         <h5>科研</h5>
@@ -48,8 +42,12 @@
 </template>
 
 <script>
+import Title from "./Title";
 export default {
   name: "Activity",
+  components: {
+    Title
+  },
   data() {
     return {
       currentIndex: 1,
@@ -70,26 +68,13 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.section
-  padding: 0 10vw
-header
-  display: flex
-  align-items: center
-  text-align: left
-  img
-      width: 64px
-      height: 100%
-      margin-right: 1em
-  h4
-    margin: 0
-  p
-    margin: 0.5em 0 0 0
 .nav
   display: flex
   align-items: center
   justify-content: space-around
   margin-top: 2em
   cursor: pointer
+  padding: 0 10vw
   h5
     font-size: 1.5em
     font-weight: normal
@@ -101,7 +86,9 @@ header
     background: #ffffff
     box-shadow:0px -9px 68px 13px rgba(36,201,255,0.79)
 .content
-  width: 100%
+  margin: 0 10vw
+  box-sizing: border-box
+  width: 80vw
   background: rgba(255,255,255,0.3)
   border-radius: 1em
   padding: 3em 4em

@@ -74,4 +74,7 @@ export default {
 // 更改导航条颜色
 #fp-nav ul li a span, .fp-slidesNav ul li a span
   background: #ffffff !important
+
+.popover
+  width: 10vw
 </style>
