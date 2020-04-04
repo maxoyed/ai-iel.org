@@ -6,8 +6,8 @@
       <Background />
       <Concept />
       <Activity />
-      <Section5 />
-      <Section6 />
+      <News />
+      <Future />
     </full-page>
   </div>
 </template>
@@ -18,8 +18,8 @@ import Overview from "./components/Overview";
 import Background from "./components/Background";
 import Concept from "./components/Concept";
 import Activity from "./components/Activity";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
+import News from "./components/News";
+import Future from "./components/Future";
 export default {
   name: "app",
   components: {
@@ -28,8 +28,8 @@ export default {
     Background,
     Concept,
     Activity,
-    Section5,
-    Section6
+    News,
+    Future
   },
   data() {
     return {
@@ -44,15 +44,15 @@ export default {
           "Background",
           "Concept",
           "Activity",
-          "Section5",
-          "Section6"
+          "News",
+          "Future"
         ],
         sectionsColor: [
           "#6240f2",
           "#5280f9",
           "#ffffff",
           "#1f2631",
-          "#ba5be9",
+          "#f9f9f9",
           "#b4b8ab"
         ]
       }

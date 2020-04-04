@@ -6,8 +6,8 @@
     <li data-menuanchor="Background"><a href="#Background">背景&机遇</a></li>
     <li data-menuanchor="Concept"><a href="#Concept">理念&使命</a></li>
     <li data-menuanchor="Activity"><a href="#Activity">活动介绍</a></li>
-    <li data-menuanchor="Section5"><a href="#Section5">新闻事件</a></li>
-    <li data-menuanchor="Section6"><a href="#Section6">联盟未来及愿景</a></li>
+    <li data-menuanchor="News"><a href="#News">新闻事件</a></li>
+    <li data-menuanchor="Future"><a href="#Future">联盟未来及愿景</a></li>
   </ul>
 </template>
 
